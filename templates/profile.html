@@ -63,7 +63,7 @@
 {% endif %}
 
 <script>
-    var activeOperator = "{{ handle | safe }}";
+    var activeOperator = {{ handle | tojson }};
     console.log("[WARDIAL] Viewing profile: " + activeOperator);
 </script>
 
