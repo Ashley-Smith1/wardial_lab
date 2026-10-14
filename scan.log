@@ -1,0 +1,28 @@
+[2026-10-13 14:04:29.653301] SUBMISSION | operator=capn_static | phone=123456 | notes=12345
+[2026-10-13 14:05:27.151014] SEARCH | keyword=12345
+[2026-10-14 13:20:42.291111] LOGIN_FAIL | handle=capn_static | attempted_password=wrongpassword123
+[2026-10-14 13:22:43.606123] LOGIN_FAIL | handle=capn_static | attempted_password=wrongpassword123
+[2026-10-14 13:22:52.301924] LOGIN_FAIL | handle=capn_static' | attempted_password=wrongpassword123
+[2026-10-14 13:32:33.375882] LOGIN_FAIL | handle=capn_static' --  | attempted_password=wrongpassword123
+[2026-10-14 13:48:23.151720] SEARCH | keyword=router
+[2026-10-14 13:49:11.083423] SEARCH | keyword=12345
+[2026-10-14 13:50:12.761476] SEARCH | keyword=12345
+[2026-10-14 13:50:16.117520] SEARCH | keyword=12345
+[2026-10-14 13:50:18.367010] SEARCH | keyword=12345
+[2026-10-14 13:50:19.932895] SEARCH | keyword=12345
+[2026-10-14 13:50:21.514387] SEARCH | keyword=12345
+[2026-10-14 13:50:23.864039] SEARCH | keyword=12345
+[2026-10-14 13:50:33.696368] SEARCH | keyword=1992
+[2026-10-14 13:50:34.647322] SEARCH | keyword=1992
+[2026-10-14 13:50:36.730531] SEARCH | keyword=1992
+[2026-10-14 13:52:01.084579] SEARCH | keyword=VAX/VMS. Guest account enabled.
+[2026-10-14 13:52:03.300739] SEARCH | keyword=VAX/VMS. Guest account enabled.
+[2026-10-14 13:53:02.963336] SEARCH | keyword=VAX/VMS. Guest account enabled.
+[2026-10-14 13:53:19.381841] SEARCH | keyword=VAX/VMS. Guest account enabled.
+[2026-10-14 13:56:20.302272] SEARCH | keyword=VAX
+[2026-10-14 14:13:03.143714] SEARCH | keyword=VAX
+[2026-10-14 14:13:21.646075] SEARCH | keyword=12345
+[2026-10-14 15:07:27.780310] SUBMISSION | operator=capn_static | phone=123456 | notes=123456
+[2026-10-14 15:12:10.680192] SUBMISSION | operator=capn_static | phone=987654 | notes=%' OR 1=1 --
+[2026-10-14 15:27:12.207093] LOGIN_FAIL | handle=test_user | attempted_password=PracticePassword123!
+[2026-10-14 16:30:19.240973] LOGIN_FAIL | handle=test_user
