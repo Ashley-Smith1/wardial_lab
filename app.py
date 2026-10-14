@@ -343,14 +343,14 @@ class ScanLogger:
 
     def log_failed_login(self, handle, password):
         """
-        Write a failed login attempt to the log.
+        Write a failed login attempt to the log without recording the password.
 
         Parameters:
             handle   -- the handle that was submitted
-            password -- the password that was submitted
+            password -- the password that was submitted but not recorded for security reasons
         """
         with open(LOG_PATH, 'a') as log_file:
-            log_file.write(f"[{datetime.now()}] LOGIN_FAIL | handle={handle} | attempted_password={password}\n")
+            log_file.write(f"[{datetime.now()}] LOGIN_FAIL | handle={handle}\n")
 
     def log_search(self, keyword):
         """
