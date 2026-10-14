@@ -264,9 +264,13 @@ class FindingRepository(Repository):
         results = None
         try:
             query = "SELECT * FROM findings WHERE notes LIKE ?"
+            params = ["%" + keyword + "%",]
+            
             if system_type:
-                query = query + " AND system_type = '" + system_type + "'"
-            results = self._db.fetchall(query, ("%" + keyword + "%",))
+                query += " AND system_type = ?"
+                params.append(system_type)
+
+            results = self._db.fetchall(query, tuple(params))
         except Exception as e:
             error = str(e)
         return results, error
