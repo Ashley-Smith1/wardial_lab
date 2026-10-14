@@ -294,9 +294,11 @@ class FindingRepository(Repository):
         if not row:
             return []
         latest_note = row['notes']
-        query = f"SELECT * FROM findings WHERE notes LIKE '%{latest_note[:20]}%'"
+        query = "SELECT * FROM findings WHERE notes LIKE ?"
+        params = ("%" + latest_note[:20] + "%",)
+
         try:
-            return self._db.fetchall(query, ())
+            return self._db.fetchall(query, params)
         except Exception:
             return []
 
